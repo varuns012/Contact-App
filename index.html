@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Contact List</title>
+        <link rel="stylesheet" href="Styles.css"></link>
+        <!--load all font-awesome styles -->
+        <link href="./fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="main_container">
+
+            <!-- Header -->
+            <div class="top_container">
+                <h1 class="heading">
+                    <i class="fas fa-user"></i> 
+                    Contact List
+                </h1>   
+                <button id="add_contact_Btn" class="add_btn">Add contact <i class="fas fa-plus plus_icon"></i></button>
+            </div>
+
+            <!-- The Add Contact Modal -->
+            <div class="modal_container">
+                <div id="add_contact_modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Add Contact</h2>
+                        </div>
+                        <form id="contact-form" onsubmit="onFormSubmit()">
+                            <div class="modal-body">
+                                <label class="input_labels">
+                                    First Name
+                                </label>
+                                <input id="firstname" class="input_fileds" placeholder=" Enter first name" required>
+                                <label class="input_labels">
+                                    Last Name
+                                </label class="input_labels">
+                                <input id="lastname" class="input_fileds" placeholder=" Enter last name" required>
+                                <label class="input_labels">
+                                    Contact Name
+                                </label>
+                                <input id="contactnumber" class="input_fileds" placeholder=" Enter contact number" required>
+                                <div class="btn_container">
+                                    <input type="submit" value="Submit" class="close save_btn">
+                                </div>
+                            </div>    
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Added Contact Table -->
+            <div class="table_cont">
+                <table id="contactList" class="table_field">
+                    <thead>
+                        <tr class="table_heading">
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Contact
+                            </th>
+                            <th>
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="contact-list">
+                        
+                    </tbody>
+                    
+                </table>
+            </div>            
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>

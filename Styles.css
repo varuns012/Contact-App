@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.top_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: aliceblue;
+}
+
+.add_btn {
+    width: 150px;
+    padding: 10px;
+    background-color: #1890ff;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 8px -5px blue;
+}
+
+.plus_icon {
+    margin-left: 10px;
+}
+
+
+table, th, td {
+    border: 0px solid black;
+    padding: 20px;
+  }
+
+  .modal_container {
+      display: flex;
+      justify-content: center;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    width: 50vw;
+    z-index: 1; /* Sit on top */
+   background-color: transparent;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Modal Header */
+.modal-header {
+    padding: 20px 16px;
+    background-color: skyblue;
+    color: white;
+  }
+  
+  /* Modal Body */
+  .modal-body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 20px;
+    }
+
+    .input_labels {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .input_fileds {
+        margin-bottom: 14px;
+        font-size: 15px;
+        padding: 8px;
+    }
+    .btn_container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .save_btn {
+        width: 30%;
+        padding: 10px;
+        font-size: 18px;
+        background-color: #1890ff;
+        cursor: pointer;
+    }
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: skyblue;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  .input_alert {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      background-color: red;
+      font-size: 20px;
+  }
+
+  .editModal {
+    text-decoration: none;
+    margin-right: 10px;
+    background-color: green;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .deleteModal {
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    text-decoration: none;
+  }
+
+  .table_cont {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+   .table_field {
+    background-color: #7A67EE;
+  }
+
+  .table_heading {
+    font-size: 1.2em;
+    color: #81D8D0;
+   }
+
+  #contact-list {
+    font-size: 1em;
+    color: white;
+    }
+
+ .no_data {
+    position: relative;
+    left: 110px;
+  }
